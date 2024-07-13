@@ -1,0 +1,575 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     20701,        567]
+NotebookOptionsPosition[     19766,        542]
+NotebookOutlinePosition[     20172,        558]
+CellTagsIndexPosition[     20129,        555]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"equation", "=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox[
+        RowBox[{
+         SubscriptBox["\[Theta]", "1"], "*", 
+         SubscriptBox["\[Omega]", "1"]}], 
+        SubscriptBox["\[Omega]", "1"]], "-", 
+       RowBox[{
+        SubscriptBox["\[Theta]", "2"], "*", 
+        SubscriptBox["\[CapitalGamma]", "5"]}]}], ")"}], 
+     SuperscriptBox["X", "2"]}], "+", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox["\[CapitalGamma]", "6"], "*", 
+        SubscriptBox["\[Theta]", "2"]}], "-", 
+       FractionBox[
+        RowBox[{
+         SubscriptBox["\[Theta]", "1"], "*", 
+         SubscriptBox["m", "2"]}], 
+        SubscriptBox["\[Omega]", "2"]], "-", "\[Mu]", "-", 
+       FractionBox[
+        RowBox[{
+         SubscriptBox["d", "1"], "*", 
+         SubscriptBox["m", "1"]}], 
+        SubscriptBox["\[Omega]", "2"]], "-", 
+       RowBox[{"2", 
+        SubscriptBox["\[CapitalGamma]", "1"], "*", 
+        SubscriptBox["\[CapitalGamma]", "5"]}], "-", 
+       SubscriptBox["\[CapitalGamma]", "3"], "-", 
+       FractionBox[
+        RowBox[{
+         SubscriptBox["\[Omega]", "1"], "*", 
+         SubscriptBox["\[CapitalGamma]", "4"]}], 
+        SubscriptBox["\[Omega]", "2"]]}], ")"}], "X"}], "+", 
+    RowBox[{"(", 
+     RowBox[{"\[Mu]", "+", 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["d", "1"], "*", 
+        SubscriptBox["m", "3"]}], 
+       SubscriptBox["\[Omega]", "2"]], "-", 
+      RowBox[{"2", 
+       SubscriptBox["\[CapitalGamma]", "1"], "*", 
+       SubscriptBox["\[CapitalGamma]", "6"]}], "-", 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["\[CapitalGamma]", "4"], "*", 
+        SubscriptBox["m", "3"]}], 
+       SubscriptBox["\[Omega]", "2"]], "+", 
+      SubscriptBox["\[CapitalGamma]", "2"]}], ")"}]}], "==", "0"}]}]], "Code",
+ CellChangeTimes->{{3.9226014340814114`*^9, 3.9226016537356296`*^9}, {
+  3.9226016857295275`*^9, 3.922602227461524*^9}, {3.922602414501706*^9, 
+  3.922602421576207*^9}, {3.922602480943759*^9, 3.9226024829660683`*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"930f9bf1-7181-4eed-a58b-85a3f26c4c10"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"\[Mu]", "+", 
+   SubscriptBox["\[CapitalGamma]", "2"], "-", 
+   RowBox[{"2", " ", 
+    SubscriptBox["\[CapitalGamma]", "1"], " ", 
+    SubscriptBox["\[CapitalGamma]", "6"]}], "+", 
+   RowBox[{
+    SuperscriptBox["X", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{
+      SubscriptBox["\[Theta]", "1"], "-", 
+      RowBox[{
+       SubscriptBox["\[CapitalGamma]", "5"], " ", 
+       SubscriptBox["\[Theta]", "2"]}]}], ")"}]}], "+", 
+   RowBox[{"X", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", "\[Mu]"}], "-", 
+      SubscriptBox["\[CapitalGamma]", "3"], "-", 
+      RowBox[{"2", " ", 
+       SubscriptBox["\[CapitalGamma]", "1"], " ", 
+       SubscriptBox["\[CapitalGamma]", "5"]}], "+", 
+      RowBox[{
+       SubscriptBox["\[CapitalGamma]", "6"], " ", 
+       SubscriptBox["\[Theta]", "2"]}], "-", 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["d", "1"], " ", 
+        SubscriptBox["m", "1"]}], 
+       SubscriptBox["\[Omega]", "2"]], "-", 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["m", "2"], " ", 
+        SubscriptBox["\[Theta]", "1"]}], 
+       SubscriptBox["\[Omega]", "2"]], "-", 
+      FractionBox[
+       RowBox[{
+        SubscriptBox["\[CapitalGamma]", "4"], " ", 
+        SubscriptBox["\[Omega]", "1"]}], 
+       SubscriptBox["\[Omega]", "2"]]}], ")"}]}], "+", 
+   FractionBox[
+    RowBox[{
+     SubscriptBox["d", "1"], " ", 
+     SubscriptBox["m", "3"]}], 
+    SubscriptBox["\[Omega]", "2"]], "-", 
+   FractionBox[
+    RowBox[{
+     SubscriptBox["m", "3"], " ", 
+     SubscriptBox["\[CapitalGamma]", "4"]}], 
+    SubscriptBox["\[Omega]", "2"]]}], "\[Equal]", "0"}]], "Output",
+ CellChangeTimes->{{3.922602204723754*^9, 3.922602228781273*^9}, 
+   3.922602422571543*^9, 3.9226024884236975`*^9},
+ CellLabel->"Out[6]=",ExpressionUUID->"ed6527ff-f2d3-4bbe-a121-1890d95811dc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Solve", " ", "the", " ", "quadratic", " ", "equation"}], " ", 
+   "*)"}], "\n", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"solutions", " ", "=", " ", 
+     RowBox[{"Solve", "[", 
+      RowBox[{"equation", ",", " ", "X"}], "]"}]}], ";"}], "\n", "\n", 
+   RowBox[{"(*", " ", 
+    RowBox[{"Print", " ", "the", " ", "solutions"}], " ", "*)"}], "\n", 
+   "solutions"}]}]], "Code",
+ CellChangeTimes->{{3.9226024463767195`*^9, 3.9226024601097865`*^9}, 
+   3.9226025558968115`*^9},
+ CellLabel->"In[18]:=",ExpressionUUID->"28323c80-97c9-444c-abdc-9dcb27c4b026"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"X", "\[Rule]", 
+     RowBox[{
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["\[Theta]", "1"], "-", 
+          RowBox[{
+           SubscriptBox["\[CapitalGamma]", "5"], " ", 
+           SubscriptBox["\[Theta]", "2"]}]}], ")"}]}]], 
+      RowBox[{"(", 
+       RowBox[{"\[Mu]", "+", 
+        SubscriptBox["\[CapitalGamma]", "3"], "+", 
+        RowBox[{"2", " ", 
+         SubscriptBox["\[CapitalGamma]", "1"], " ", 
+         SubscriptBox["\[CapitalGamma]", "5"]}], "-", 
+        RowBox[{
+         SubscriptBox["\[CapitalGamma]", "6"], " ", 
+         SubscriptBox["\[Theta]", "2"]}], "-", 
+        SqrtBox[
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "4"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             SubscriptBox["\[Theta]", "1"], "-", 
+             RowBox[{
+              SubscriptBox["\[CapitalGamma]", "5"], " ", 
+              SubscriptBox["\[Theta]", "2"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"\[Mu]", "+", 
+             SubscriptBox["\[CapitalGamma]", "2"], "-", 
+             RowBox[{"2", " ", 
+              SubscriptBox["\[CapitalGamma]", "1"], " ", 
+              SubscriptBox["\[CapitalGamma]", "6"]}], "+", 
+             FractionBox[
+              RowBox[{
+               SubscriptBox["d", "1"], " ", 
+               SubscriptBox["m", "3"]}], 
+              SubscriptBox["\[Omega]", "2"]], "-", 
+             FractionBox[
+              RowBox[{
+               SubscriptBox["m", "3"], " ", 
+               SubscriptBox["\[CapitalGamma]", "4"]}], 
+              SubscriptBox["\[Omega]", "2"]]}], ")"}]}], "+", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "\[Mu]"}], "-", 
+             SubscriptBox["\[CapitalGamma]", "3"], "-", 
+             RowBox[{"2", " ", 
+              SubscriptBox["\[CapitalGamma]", "1"], " ", 
+              SubscriptBox["\[CapitalGamma]", "5"]}], "+", 
+             RowBox[{
+              SubscriptBox["\[CapitalGamma]", "6"], " ", 
+              SubscriptBox["\[Theta]", "2"]}], "-", 
+             FractionBox[
+              RowBox[{
+               SubscriptBox["d", "1"], " ", 
+               SubscriptBox["m", "1"]}], 
+              SubscriptBox["\[Omega]", "2"]], "-", 
+             FractionBox[
+              RowBox[{
+               SubscriptBox["m", "2"], " ", 
+               SubscriptBox["\[Theta]", "1"]}], 
+              SubscriptBox["\[Omega]", "2"]], "-", 
+             FractionBox[
+              RowBox[{
+               SubscriptBox["\[CapitalGamma]", "4"], " ", 
+               SubscriptBox["\[Omega]", "1"]}], 
+              SubscriptBox["\[Omega]", "2"]]}], ")"}], "2"]}]], "+", 
+        FractionBox[
+         RowBox[{
+          SubscriptBox["d", "1"], " ", 
+          SubscriptBox["m", "1"]}], 
+         SubscriptBox["\[Omega]", "2"]], "+", 
+        FractionBox[
+         RowBox[{
+          SubscriptBox["m", "2"], " ", 
+          SubscriptBox["\[Theta]", "1"]}], 
+         SubscriptBox["\[Omega]", "2"]], "+", 
+        FractionBox[
+         RowBox[{
+          SubscriptBox["\[CapitalGamma]", "4"], " ", 
+          SubscriptBox["\[Omega]", "1"]}], 
+         SubscriptBox["\[Omega]", "2"]]}], ")"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"X", "\[Rule]", 
+     RowBox[{
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["\[Theta]", "1"], "-", 
+          RowBox[{
+           SubscriptBox["\[CapitalGamma]", "5"], " ", 
+           SubscriptBox["\[Theta]", "2"]}]}], ")"}]}]], 
+      RowBox[{"(", 
+       RowBox[{"\[Mu]", "+", 
+        SubscriptBox["\[CapitalGamma]", "3"], "+", 
+        RowBox[{"2", " ", 
+         SubscriptBox["\[CapitalGamma]", "1"], " ", 
+         SubscriptBox["\[CapitalGamma]", "5"]}], "-", 
+        RowBox[{
+         SubscriptBox["\[CapitalGamma]", "6"], " ", 
+         SubscriptBox["\[Theta]", "2"]}], "+", 
+        SqrtBox[
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "4"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             SubscriptBox["\[Theta]", "1"], "-", 
+             RowBox[{
+              SubscriptBox["\[CapitalGamma]", "5"], " ", 
+              SubscriptBox["\[Theta]", "2"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"\[Mu]", "+", 
+             SubscriptBox["\[CapitalGamma]", "2"], "-", 
+             RowBox[{"2", " ", 
+              SubscriptBox["\[CapitalGamma]", "1"], " ", 
+              SubscriptBox["\[CapitalGamma]", "6"]}], "+", 
+             FractionBox[
+              RowBox[{
+               SubscriptBox["d", "1"], " ", 
+               SubscriptBox["m", "3"]}], 
+              SubscriptBox["\[Omega]", "2"]], "-", 
+             FractionBox[
+              RowBox[{
+               SubscriptBox["m", "3"], " ", 
+               SubscriptBox["\[CapitalGamma]", "4"]}], 
+              SubscriptBox["\[Omega]", "2"]]}], ")"}]}], "+", 
+          SuperscriptBox[
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "\[Mu]"}], "-", 
+             SubscriptBox["\[CapitalGamma]", "3"], "-", 
+             RowBox[{"2", " ", 
+              SubscriptBox["\[CapitalGamma]", "1"], " ", 
+              SubscriptBox["\[CapitalGamma]", "5"]}], "+", 
+             RowBox[{
+              SubscriptBox["\[CapitalGamma]", "6"], " ", 
+              SubscriptBox["\[Theta]", "2"]}], "-", 
+             FractionBox[
+              RowBox[{
+               SubscriptBox["d", "1"], " ", 
+               SubscriptBox["m", "1"]}], 
+              SubscriptBox["\[Omega]", "2"]], "-", 
+             FractionBox[
+              RowBox[{
+               SubscriptBox["m", "2"], " ", 
+               SubscriptBox["\[Theta]", "1"]}], 
+              SubscriptBox["\[Omega]", "2"]], "-", 
+             FractionBox[
+              RowBox[{
+               SubscriptBox["\[CapitalGamma]", "4"], " ", 
+               SubscriptBox["\[Omega]", "1"]}], 
+              SubscriptBox["\[Omega]", "2"]]}], ")"}], "2"]}]], "+", 
+        FractionBox[
+         RowBox[{
+          SubscriptBox["d", "1"], " ", 
+          SubscriptBox["m", "1"]}], 
+         SubscriptBox["\[Omega]", "2"]], "+", 
+        FractionBox[
+         RowBox[{
+          SubscriptBox["m", "2"], " ", 
+          SubscriptBox["\[Theta]", "1"]}], 
+         SubscriptBox["\[Omega]", "2"]], "+", 
+        FractionBox[
+         RowBox[{
+          SubscriptBox["\[CapitalGamma]", "4"], " ", 
+          SubscriptBox["\[Omega]", "1"]}], 
+         SubscriptBox["\[Omega]", "2"]]}], ")"}]}]}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.922602461656637*^9, 3.9226024928097754`*^9, 
+  3.922602576674238*^9},
+ CellLabel->"Out[19]=",ExpressionUUID->"0809f1a4-ef45-4187-b853-52cbe1790e65"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"solutions", "//", "Simplify"}]], "Code",
+ CellChangeTimes->{{3.922602592237461*^9, 3.922602602800969*^9}},
+ CellLabel->"In[20]:=",ExpressionUUID->"7c204ce8-0d11-4ed8-9071-c899d165fba1"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"X", "\[Rule]", 
+     RowBox[{
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["\[Theta]", "1"], "-", 
+          RowBox[{
+           SubscriptBox["\[CapitalGamma]", "5"], " ", 
+           SubscriptBox["\[Theta]", "2"]}]}], ")"}], " ", 
+        SubscriptBox["\[Omega]", "2"]}]], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["d", "1"], " ", 
+         SubscriptBox["m", "1"]}], "+", 
+        RowBox[{
+         SubscriptBox["m", "2"], " ", 
+         SubscriptBox["\[Theta]", "1"]}], "+", 
+        RowBox[{
+         SubscriptBox["\[CapitalGamma]", "4"], " ", 
+         SubscriptBox["\[Omega]", "1"]}], "+", 
+        RowBox[{"\[Mu]", " ", 
+         SubscriptBox["\[Omega]", "2"]}], "+", 
+        RowBox[{
+         SubscriptBox["\[CapitalGamma]", "3"], " ", 
+         SubscriptBox["\[Omega]", "2"]}], "+", 
+        RowBox[{"2", " ", 
+         SubscriptBox["\[CapitalGamma]", "1"], " ", 
+         SubscriptBox["\[CapitalGamma]", "5"], " ", 
+         SubscriptBox["\[Omega]", "2"]}], "-", 
+        RowBox[{
+         SubscriptBox["\[CapitalGamma]", "6"], " ", 
+         SubscriptBox["\[Theta]", "2"], " ", 
+         SubscriptBox["\[Omega]", "2"]}], "-", 
+        RowBox[{
+         SubscriptBox["\[Omega]", "2"], " ", 
+         SqrtBox[
+          FractionBox[
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "4"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SubscriptBox["\[Theta]", "1"], "-", 
+               RowBox[{
+                SubscriptBox["\[CapitalGamma]", "5"], " ", 
+                SubscriptBox["\[Theta]", "2"]}]}], ")"}], " ", 
+             SubscriptBox["\[Omega]", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                SubscriptBox["d", "1"], " ", 
+                SubscriptBox["m", "3"]}], "-", 
+               RowBox[{
+                SubscriptBox["m", "3"], " ", 
+                SubscriptBox["\[CapitalGamma]", "4"]}], "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"\[Mu]", "+", 
+                  SubscriptBox["\[CapitalGamma]", "2"], "-", 
+                  RowBox[{"2", " ", 
+                   SubscriptBox["\[CapitalGamma]", "1"], " ", 
+                   SubscriptBox["\[CapitalGamma]", "6"]}]}], ")"}], " ", 
+                SubscriptBox["\[Omega]", "2"]}]}], ")"}]}], "+", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                SubscriptBox["d", "1"], " ", 
+                SubscriptBox["m", "1"]}], "+", 
+               RowBox[{
+                SubscriptBox["m", "2"], " ", 
+                SubscriptBox["\[Theta]", "1"]}], "+", 
+               RowBox[{
+                SubscriptBox["\[CapitalGamma]", "4"], " ", 
+                SubscriptBox["\[Omega]", "1"]}], "+", 
+               RowBox[{"\[Mu]", " ", 
+                SubscriptBox["\[Omega]", "2"]}], "+", 
+               RowBox[{
+                SubscriptBox["\[CapitalGamma]", "3"], " ", 
+                SubscriptBox["\[Omega]", "2"]}], "+", 
+               RowBox[{"2", " ", 
+                SubscriptBox["\[CapitalGamma]", "1"], " ", 
+                SubscriptBox["\[CapitalGamma]", "5"], " ", 
+                SubscriptBox["\[Omega]", "2"]}], "-", 
+               RowBox[{
+                SubscriptBox["\[CapitalGamma]", "6"], " ", 
+                SubscriptBox["\[Theta]", "2"], " ", 
+                SubscriptBox["\[Omega]", "2"]}]}], ")"}], "2"]}], 
+           SubsuperscriptBox["\[Omega]", "2", "2"]]]}]}], ")"}]}]}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"X", "\[Rule]", 
+     RowBox[{
+      FractionBox["1", 
+       RowBox[{"2", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          SubscriptBox["\[Theta]", "1"], "-", 
+          RowBox[{
+           SubscriptBox["\[CapitalGamma]", "5"], " ", 
+           SubscriptBox["\[Theta]", "2"]}]}], ")"}], " ", 
+        SubscriptBox["\[Omega]", "2"]}]], 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         SubscriptBox["d", "1"], " ", 
+         SubscriptBox["m", "1"]}], "+", 
+        RowBox[{
+         SubscriptBox["m", "2"], " ", 
+         SubscriptBox["\[Theta]", "1"]}], "+", 
+        RowBox[{
+         SubscriptBox["\[CapitalGamma]", "4"], " ", 
+         SubscriptBox["\[Omega]", "1"]}], "+", 
+        RowBox[{"\[Mu]", " ", 
+         SubscriptBox["\[Omega]", "2"]}], "+", 
+        RowBox[{
+         SubscriptBox["\[CapitalGamma]", "3"], " ", 
+         SubscriptBox["\[Omega]", "2"]}], "+", 
+        RowBox[{"2", " ", 
+         SubscriptBox["\[CapitalGamma]", "1"], " ", 
+         SubscriptBox["\[CapitalGamma]", "5"], " ", 
+         SubscriptBox["\[Omega]", "2"]}], "-", 
+        RowBox[{
+         SubscriptBox["\[CapitalGamma]", "6"], " ", 
+         SubscriptBox["\[Theta]", "2"], " ", 
+         SubscriptBox["\[Omega]", "2"]}], "+", 
+        RowBox[{
+         SubscriptBox["\[Omega]", "2"], " ", 
+         SqrtBox[
+          FractionBox[
+           RowBox[{
+            RowBox[{
+             RowBox[{"-", "4"}], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               SubscriptBox["\[Theta]", "1"], "-", 
+               RowBox[{
+                SubscriptBox["\[CapitalGamma]", "5"], " ", 
+                SubscriptBox["\[Theta]", "2"]}]}], ")"}], " ", 
+             SubscriptBox["\[Omega]", "2"], " ", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                SubscriptBox["d", "1"], " ", 
+                SubscriptBox["m", "3"]}], "-", 
+               RowBox[{
+                SubscriptBox["m", "3"], " ", 
+                SubscriptBox["\[CapitalGamma]", "4"]}], "+", 
+               RowBox[{
+                RowBox[{"(", 
+                 RowBox[{"\[Mu]", "+", 
+                  SubscriptBox["\[CapitalGamma]", "2"], "-", 
+                  RowBox[{"2", " ", 
+                   SubscriptBox["\[CapitalGamma]", "1"], " ", 
+                   SubscriptBox["\[CapitalGamma]", "6"]}]}], ")"}], " ", 
+                SubscriptBox["\[Omega]", "2"]}]}], ")"}]}], "+", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{
+                SubscriptBox["d", "1"], " ", 
+                SubscriptBox["m", "1"]}], "+", 
+               RowBox[{
+                SubscriptBox["m", "2"], " ", 
+                SubscriptBox["\[Theta]", "1"]}], "+", 
+               RowBox[{
+                SubscriptBox["\[CapitalGamma]", "4"], " ", 
+                SubscriptBox["\[Omega]", "1"]}], "+", 
+               RowBox[{"\[Mu]", " ", 
+                SubscriptBox["\[Omega]", "2"]}], "+", 
+               RowBox[{
+                SubscriptBox["\[CapitalGamma]", "3"], " ", 
+                SubscriptBox["\[Omega]", "2"]}], "+", 
+               RowBox[{"2", " ", 
+                SubscriptBox["\[CapitalGamma]", "1"], " ", 
+                SubscriptBox["\[CapitalGamma]", "5"], " ", 
+                SubscriptBox["\[Omega]", "2"]}], "-", 
+               RowBox[{
+                SubscriptBox["\[CapitalGamma]", "6"], " ", 
+                SubscriptBox["\[Theta]", "2"], " ", 
+                SubscriptBox["\[Omega]", "2"]}]}], ")"}], "2"]}], 
+           SubsuperscriptBox["\[Omega]", "2", "2"]]]}]}], ")"}]}]}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.9226026046963634`*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"8ac036a4-9a48-4860-9221-f2df71cc78d5"]
+}, Open  ]]
+},
+WindowSize->{960, 472},
+WindowMargins->{{-5.5, Automatic}, {Automatic, -5.5}},
+FrontEndVersion->"13.2 for Microsoft Windows (64-bit) (November 18, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"5bb0db10-2870-4d20-9d6f-461f0870bb2c"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2177, 60, 69, "Code",ExpressionUUID->"930f9bf1-7181-4eed-a58b-85a3f26c4c10"],
+Cell[2760, 84, 1850, 53, 50, "Output",ExpressionUUID->"ed6527ff-f2d3-4bbe-a121-1890d95811dc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4647, 142, 604, 15, 121, "Code",ExpressionUUID->"28323c80-97c9-444c-abdc-9dcb27c4b026"],
+Cell[5254, 159, 6790, 180, 183, "Output",ExpressionUUID->"0809f1a4-ef45-4187-b853-52cbe1790e65"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12081, 344, 209, 3, 50, "Code",ExpressionUUID->"7c204ce8-0d11-4ed8-9071-c899d165fba1"],
+Cell[12293, 349, 7457, 190, 238, "Output",ExpressionUUID->"8ac036a4-9a48-4860-9221-f2df71cc78d5"]
+}, Open  ]]
+}
+]
+*)
+
